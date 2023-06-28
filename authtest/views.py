@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 def cadastro(request):
@@ -7,7 +8,7 @@ def cadastro(request):
         username = request.POST.get('username')
         email = request.POST.get('email')
         senha = request.POST.get('senha')
-        return 
+        return HttpResponse(username)
 
 
 def login(request):
