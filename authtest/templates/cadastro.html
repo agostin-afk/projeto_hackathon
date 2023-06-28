@@ -1,1 +1,60 @@
-<h1>Cadastro</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formns</title>
+    <style>
+        @charset "UTF-8";
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        form {
+            width: 300px;
+        }
+
+
+        form input {
+
+            margin-top: 20px;
+            padding: 5px 10px;
+            width: 100%;
+        }
+        #enviar{
+            width: auto;
+        }
+        .forms{
+            width: 100vw;
+            height: 100vh;
+            background: #6C7A89;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="forms">
+                <form action="{%url 'cadastro' %}" method="POST">
+                    <input type="text" placeholder="Seu nome" name="username">
+                    <br>
+                    <br>
+                    <input type="password" placeholder="Sua senha" name="senha">
+                    <br>
+                    <br>
+                    <input type="email" placeholder="Seu email" name="email">
+                    <br>
+                    <br>
+                    <input id="enviar" type="submit" value= "cadastrar">
+                </form>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
