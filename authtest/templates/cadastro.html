@@ -41,7 +41,7 @@
     <main>
         <article>
             <div class="forms">
-                <form action="{%url 'cadastro' %}" method="POST">
+                <form action="{%url 'cadastro' %}" method="POST"> {% csrf_token %}
                     <input type="text" placeholder="Seu nome" name="username">
                     <br>
                     <br>
