@@ -52,9 +52,11 @@
         <article>
             <div class="forms">
                 <form action="{%url 'login' %}" method="POST"> {% csrf_token %}
+                    Seu nome:
                     <input type="text" placeholder="Seu nome" name="username">
                     <br>
                     <br>
+                    Sua senha:
                     <input type="password" placeholder="Sua senha" name="senha">
                     <br>
                     <br>
