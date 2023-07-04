@@ -34,7 +34,7 @@ def login(request):
             
             login_django(request, user)
             
-            return HttpResponse("autenticado")
+            return render(request, "produtos.html")
         else: 
             return HttpResponse("Email ou senha inválidos")
 '''      
@@ -47,4 +47,5 @@ def produtos(request):
 '''
 @login_required(login_url="/auth/login/")
 def produtos(request):
-    return HttpResponse('pagina dos produtos')
+    if request.method == "GET":
+        return render(request, 'produtos.html')
