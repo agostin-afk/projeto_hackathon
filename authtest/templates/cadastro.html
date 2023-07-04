@@ -1,56 +1,17 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formns</title>
-    <style>
-        @charset "UTF-8";
-
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        form {
-            width: 300px;
-            padding-left: 7px;
-            padding-top: 5px;
-            padding-right: 30px;
-            padding-bottom: 7px;
-            border-radius: 10px;
-            background-color: #d3d7db;
-            box-shadow: 3px 3px 11px 1px black
-        }
-        
-        
-        form input {
-        
-            margin-top: 20px;
-            padding: 5px 10px;
-            width: 100%;
-        }
-        #enviar{
-            width: auto;
-        }
-        .forms{
-            width: 100vw;
-            height: 100vh;
-            background: #6C7A89;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-        fieldset{
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/estilo.principal.css'%}">
 </head>
 <body>
     <main>
         <article>
             <div class="forms">
+                <img src="{% static 'img/ufc-logo-universidade-2.png'%}" alt="foto-ufc-logo">
                 <form action="{%url 'cadastro' %}" method="POST"> {% csrf_token %}
                     Seu nome:
                     <input type="text" placeholder="Seu nome" name="username">
@@ -64,7 +25,7 @@
                     <input type="email" placeholder="Seu email" name="email">
                     <br>
                     <br>
-                    <input id="enviar" type="submit" value= "cadastrar">
+                    <input id="enviar" type="submit" value= "Cadastrar">
             </div>
         </article>
     </main>
