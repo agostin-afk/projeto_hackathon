@@ -45,3 +45,10 @@ form input {
 fieldset{
     border-radius: 10px;
 }
+a{
+    text-decoration: none;
+    color: #155FBF;
+}
+a:hover{
+    text-decoration:underline;
+}
