@@ -5,9 +5,24 @@ from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
 
+
 def pagina_inicial(request):
     if request.method == 'GET':
         return render(request, 'cadastro.html')
+
+def cadastroprod(request):
+    if request.method == "GET":
+        return render(request, 'cadastroprod.html')
+    else:
+        id_produto = request.POST.get('id_produto')
+        nome_produto = request.POST.get('nome_produto')
+        descricao = request.POST.get('descricao')
+        
+        produto = User.objects.filter(username= id_produto).first()
+        if produto:
+            return HttpResponse('produto com ID já cadastrado, tente novamente') 
+        else:
+            produto = User.objects.create_produto(username = nome_produto, id= id_produto, descricao= descricao)
 
 def cadastro(request):
     if request.method == "GET":
