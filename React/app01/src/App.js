@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './header';
-import Dados from './dados';
+import Corpo from './corpo';
 
 function App() {
   return (
     <section>
     <Header/>
-    <Dados/>
+    <Corpo/>
     </section>
   );
 }
