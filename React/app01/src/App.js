@@ -1,9 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './header';
+import Dados from './dados';
 
 function App() {
   return (
-    <h1>Olá mundo</h1>
+    <section>
+    <Header/>
+    <Dados/>
+    </section>
   );
 }
 
