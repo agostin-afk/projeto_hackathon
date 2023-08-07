@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './header';
 import Corpo from './corpo';
-import Relogio from './Relogio'
 
 function App() {
   const nome = "Agosto";
@@ -16,7 +14,6 @@ function App() {
     idade={idade} 
     peso={peso}
     />
-    <Relogio/>
     </section>
   );
 }
