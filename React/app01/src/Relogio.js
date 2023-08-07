@@ -16,6 +16,6 @@ export default function Clock() {
   const formattedTime = time.toLocaleTimeString();
 
   return (
-      <p>{formattedTime}</p>
+      <>{formattedTime}</>
   );
 }

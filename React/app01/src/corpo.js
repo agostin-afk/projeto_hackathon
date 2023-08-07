@@ -7,7 +7,7 @@ export default function Corpo(props){
             <p>Seu nome é: {props.nome}</p>
             <p>Você possui {props.peso}kg</p>
             <p>E tem {props.idade} anos</p>
-            <p>Horario atual:<Relogio/></p>
+            <p>Horario atual: <Relogio/></p>
             
         </section>
     )
