@@ -68,10 +68,10 @@ WSGI_APPLICATION = 'login_gerenciador.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '*****',
-        'USER': '*****',
-        'PASSWORD': '*****',
-        'HOST': '*****',
+        'NAME': '*******',
+        'USER': 'postgres',
+        'PASSWORD': '******',
+        'HOST': 'localhost',
     }
 }
 

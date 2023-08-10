@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
+from .models import Usuario, Produto
+from django.db.models.aggregates import Avg, Sum, Count, Min, Max, StdDev, Variance
 
 def pagina_inicial(request):
     if request.method == 'GET':
