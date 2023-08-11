@@ -5,7 +5,10 @@ from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
 from .models import Usuario, Produto
-from django.db.models.aggregates import Avg, Sum, Count, Min, Max, StdDev, Variance
+
+def DBteste(request):
+    usuarios = Usuario.objects.all()    
+    return render(request, 'DBteste.html', {"usuarios": usuarios})
 
 def pagina_inicial(request):
     if request.method == 'GET':
