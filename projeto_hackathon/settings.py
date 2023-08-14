@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'projeto_hackathon',
 ]
 
 SITE_ID = 1
