@@ -11,7 +11,12 @@
 <body>
     <main class= 'conteudo'>
         <article id = 'lista'>
-            <h1></h1>
+            <ul>
+                <p> p</p>
+                {% for pessoa in pessoas%}
+                <li>{{ pessoa.id }} - {{ pessoa.username}}</li>
+                {% endfor %}
+            </ul>
         </article>
     </main>
 </body>

@@ -4,10 +4,11 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
+from .models import Usuario
 
 def lista(request):
-    if request.method =="GET":
-        return render(request, 'lista.html')
+    pessoas = User.objects.all()
+    return render(request, 'lista.html', {"pessoas": pessoas})
 
 def cadastro(request):
     if request.method == "GET":
