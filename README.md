@@ -14,3 +14,9 @@ _Repositório voltado para testes mais gerais_
 
 ## Versão do Python 
 - Python 3.11.4
+
+## Linhas do terminal para executar
+- .\NomeDoSeuAmbienteVirtual\Scripts\Activate.ps1 
+- python manage.py makemigrations
+- python manage.py makemigrations
+- python manage.py runserver
