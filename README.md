@@ -18,5 +18,5 @@ _Repositório voltado para testes mais gerais_
 ## Linhas do terminal para executar
 - .\NomeDoSeuAmbienteVirtual\Scripts\Activate.ps1 
 - python manage.py makemigrations
-- python manage.py makemigrations
+- python manage.py migrate
 - python manage.py runserver
