@@ -1,5 +1,5 @@
 # projeto hackathon
-Repositório voltado para testes mais gerais
+_Repositório voltado para testes mais gerais_
 
 ## Bibliotecas instaladas:
 - asgiref==3.7.2
