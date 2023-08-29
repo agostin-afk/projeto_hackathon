@@ -1,2 +1,16 @@
-# projeto_hackathon
- projeto hackathon UFC 2023
+# projeto hackathon
+Repositório voltado para testes mais gerais
+
+## Bibliotecas instaladas:
+- asgiref==3.7.2
+- Django==4.2.4
+- django-filter==23.2
+- djangorestframework==3.14.0
+- Markdown==3.4.4
+- psycopg2==2.9.7
+- pytz==2023.3
+- sqlparse==0.4.4
+- tzdata==2023.3
+
+## Versão do Python 
+- Python 3.11.4
