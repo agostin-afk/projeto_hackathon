@@ -19,4 +19,4 @@ _Repositório voltado para testes mais gerais_
 - .\NomeDoSeuAmbienteVirtual\Scripts\Activate.ps1 
 - python manage.py makemigrations
 - python manage.py makemigrations
-- python manage.py runserve
+- python manage.py runserver
